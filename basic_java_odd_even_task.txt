@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+
+public class Main
+{
+	public static void main(String[] args)
+	{
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("Пожалуйста, введите число: ");
+		int number = scanner.nextInt();
+
+		boolean isNumberEven = isNumberEven(number);
+
+		String isNumberEvenString = "";
+
+		if (isNumberEven) {
+			isNumberEvenString = "чётное";
+		} else {
+			isNumberEvenString = "нечётное";
+		}
+
+		System.out.println("Чётное ли число? " + isNumberEvenString);
+	}
+
+	public static boolean isNumberEven(int number) {
+		if (number % 2 == 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+}
