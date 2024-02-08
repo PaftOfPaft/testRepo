@@ -1,0 +1,77 @@
+
+		int intVar = 10;
+
+		//Алгебраические операторы
+		System.out.println(intVar + 1);
+		System.out.println(intVar - 1);
+		System.out.println(intVar / 1);
+		System.out.println(intVar * 1);
+
+		//Логические опретаторы
+
+		//Логическое "AND" "И"
+		// TRUE && TRUE
+		// Идёт дождь(ИСТИНА) && Есть некачественный асфальт(ИСТИНА) = на асфальте образуются лужи(ИСТИНА)
+		System.out.println("TRUE && TRUE: " + (true && true));
+		// FALSE && TRUE
+		// Идёт дождь(ЛОЖЬ) && Есть некачественный асфальт(ИСТИНА) = на асфальте образуются лужи(ЛОЖЬ)
+		System.out.println("FALSE && TRUE: " + (false && true));
+		//TRUE && FALSE
+		// Идёт дождь(ИСТИНА) && Есть некачественный асфальт(ЛОЖЬ) = на асфальте образуются лужи(ЛОЖЬ)
+		System.out.println("TRUE && FALSE: " + (true && false));
+		//FALSE && FALSE
+		// Идёт дождь(ЛОЖЬ) && Есть некачественный асфальт(ЛОЖЬ) = на асфальте образуются лужи(ЛОЖЬ)
+		System.out.println("FALSE && FALSE: " + (false && false));
+
+
+
+		// Логическое "OR" "ИЛИ"
+		// TRUE || TRUE
+		// ЕСТЬ ДВА РЫНКА(ИСТИНА) || НА ПЕРВОМ РЫНКЕ ЦЕНЫ НИЖЕ(ИСТИНА) = Я ПОЙДУ ПОКУПАТЬ ПРОДУКТЫ НА ПЕРВОМ РЫНКЕ(ИСТИНА)
+		System.out.println("TRUE || TRUE: " + (true || true));
+
+		// FALSE || TRUE
+		// ЕСТЬ ДВА РЫНКА(ЛОЖЬ) || НА ПЕРВОМ РЫНКЕ ЦЕНЫ НИЖЕ(ИСТИНА) = Я ПОЙДУ ПОКУПАТЬ ПРОДУКТЫ НА ПЕРВОМ РЫНКЕ(ИСТИНА)
+		System.out.println("FALSE || TRUE: " + (false || true));
+
+		// TRUE || FALSE
+		// ЕСТЬ ДВА РЫНКА(ИСТИНА) || НА ПЕРВОМ РЫНКЕ ЦЕНЫ НИЖЕ(ЛОЖЬ) = Я ПОЙДУ ПОКУПАТЬ ПРОДУКТЫ НА ПЕРВОМ РЫНКЕ(ИСТИНА)
+		System.out.println("FALSE || TRUE: " + (true || false));
+
+
+		// FALSE || FALSE
+		// ЕСТЬ ДВА РЫНКА(ЛОЖЬ) || НА ПЕРВОМ РЫНКЕ ЦЕНЫ НИЖЕ(ЛОЖЬ) = Я ПОЙДУ ПОКУПАТЬ ПРОДУКТЫ НА ПЕРВОМ РЫНКЕ(ЛОЖЬ)
+		System.out.println("FALSE || FALSE: " + (false || false));
+
+
+		//NOT НЕ !
+		System.out.println(!false); // TRUE
+		System.out.println(!true); // FALSE
+
+
+		int number1 = 10;
+		int number2 = 10;
+
+		// number1 > number2 (ЧИСЛО 1 БОЛЬШЕ ЧИСЛА 2)
+		boolean booleanResult = number1 > number2;
+		System.out.println("number1 > number2: " + booleanResult);
+
+		// number1 < number2 (ЧИСЛО 1 МЕНЬШЕ ЧИСЛА 2)
+		 boolean booleanResult2 = number1 < number2;
+		System.out.println("number1 < number2: " + booleanResult2);
+
+		// number1 == number2 (ЧИСЛО 1 РАВНО ЧИСЛУ 2)
+		boolean booleanResult3 = number1 == number2;
+		System.out.println("number1 == number2: " + booleanResult3);
+
+		// number1 != number2 (ЧИСЛО 1 НЕ РАВНО ЧИСЛУ 2)
+		boolean booleanResult4 = number1 != number2;
+		System.out.println("number1 != number2: " + booleanResult4);
+
+		// number1 >= number2 (ЧИСЛО 1 БОЛЬШЕ ИЛИ РАВНО ЧИСЛУ 2)
+		boolean booleanResult5 = number1 >= number2;
+		System.out.println("number1 >= number2: " + booleanResult5);
+
+		// number1 >= number2 (ЧИСЛО 1 МЕНЬШЕ ИЛИ РАВНО ЧИСЛУ 2)
+		boolean booleanResult6 = number1 <= number2;
+		System.out.println("number1 <= number2: " + booleanResult6);
